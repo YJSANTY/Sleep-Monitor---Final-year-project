@@ -1,0 +1,35 @@
+########################################## sleep_table_test #####################################
+CREATE TABLE `sleep_table_test` (
+    `id` varchar(255) NOT NULL,
+    `SpO2` int(2) NOT NULL,
+    `Heart_Beat` int(2) NOT NULL,
+    `Noise` int(4) NOT NULL,
+    `Body_Motion` float(10,2) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+######################################## sleep_table_max_leds_update ###########################
+CREATE TABLE `sleep_table_max_leds_update` (
+    `id` varchar(255) NOT NULL,
+    `SpO2` int(2) NOT NULL,
+    `Heart_Beat` int(2) NOT NULL,
+    `Noise` int(4) NOT NULL,
+    `Body_Motion` float(10,2) NOT NULL,
+    `time` time NOT NULL,
+    `date` date NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `sleep_table_max_leds_update`(`id`, `SpO2`, `Hear_Beat`, `Noise`, `Body_Motion`,`time`, `date`) VALUES ('esp32_01','95','65','1835','78.00',NOW(),NOW())
+
+######################################## sleep_table_max_leds_record ###########################
+CREATE TABLE `sleep_table_max_leds_record` (
+    `id` varchar(255) NOT NULL,
+    `SpO2` int(2) NOT NULL,
+    `Heart_Beat` int(2) NOT NULL,
+    `Noise` int(4) NOT NULL,
+    `Body_Motion` float(10,2) NOT NULL,
+    `time` time NOT NULL,
+    `date` date NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
